@@ -1,0 +1,8 @@
+Problem Statement -1: Create a CloudWatch alarm that sends an email using SNS notification when CPU Utilization is more than 70%.
+
+Solution: 
+This can be achieved via in one of the three ways:
+1. AWS Console
+2. AWS CLI
+3. Terraform
+
