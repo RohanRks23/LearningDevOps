@@ -1,0 +1,16 @@
+Problem Statement: Create a CloudWatch alarm that sends an email using SNS notification when CPU Utilization is more than 70%.
+
+Solution: 
+This can be achieved via in one of the three ways:
+1. AWS Console
+2. AWS CLI
+3. Terraform
+
+Basically, we have to create a cloudwatch alarm a monitoring agent in an EC2 instance. Which continuesly monitor the CPU states of that Ec2 instance. When ever the CPU utilization reaches or exceeds 70 percentage the cloud watch agent sends a notification to your email, slack, phone number etc. whichever you like to get aws notifications in using the sns service in the AWS.
+
+What is CloudWatch?
+AWS CloudWatch is a monitoring service to monitor AWS resources, as well as the applications that run on AWS. Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications. CloudWatch can be used on premise too. We just need to install the SSM(System Manager) and CloudWatch agent.
+
+
+What is SNS Simple notification service?
+Amazon Simple Notification Service (Amazon SNS) is a managed service that provides message delivery from publishers to subscribers (also known as producers and consumers).  Clients can subscribe to the SNS topic and receive published messages using a supported endpoint type, such as Amazon Kinesis Data Firehose, Amazon SQS, AWS Lambda, HTTP, email, mobile push notifications, and mobile text messages (SMS).
