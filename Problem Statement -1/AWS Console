@@ -1,0 +1,10 @@
+Solution using AWS Console
+
+Open the CloudWatch console at https://console.aws.amazon.com/cloudwatch/.
+
+In the navigation pane, choose Alarms, Create Alarm.
+Go to Metric → Select metric → EC2 → Per-Instance-Metrics → CPU Utilization → Select metric
+
+Then go to SNS topic and create one select the destination you want to receive the notification to and subscribe to it.
+in console
+go to services and type sns and open the service > topic > create topic > fill in all the details and start service.
